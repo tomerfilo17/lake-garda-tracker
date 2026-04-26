@@ -199,6 +199,7 @@ DEMO = [
         "eur_n":390,"eur_t":2340,
         "beds":4,"baths":3,"free_cancel":True,"is_deal":True,
         "deal_reason":"מחיר נמוך ב-30% מהממוצע עם דירוג 4.7 – מבצע אמיתי!",
+        "is_entire":True,
         "tags":["🌿 אגריטוריזמו","🏊 בריכה","🌊 נוף לאגם","✅ ביטול חינם","👶 ידידותי לילדים","🧹 נקי מאוד","⭐ חדש ומעוצב"],
         "kids":["גינה מוקפת גדר","חדר משחקים","מיטות תינוק","בריכה רדודה"],
         "clean":"10/10 – אורחים כותבים 'נקי להפליא', שופץ 2023",
@@ -207,7 +208,7 @@ DEMO = [
         "airbnb_url":"https://www.airbnb.com/s/Lazise--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4&amenities%5B%5D=7&property_type_id%5B%5D=2",
     },
     {
-        "id":"d2","name":"וילה רוסטיקה סירמיונה – חצי האי",
+        "id":"d2","name":"וילה רוסטיקה סירמיונה – חצי האי","is_entire":True,
         "area":"סירמיונה (חוף דרומי)","address":"Loc. Lugana, Sirmione",
         "lat":45.4948,"lon":10.6082,
         "photo":"https://images.unsplash.com/photo-1613977257363-707ba9348227?w=700",
@@ -222,14 +223,14 @@ DEMO = [
         "airbnb_url":"https://www.airbnb.com/s/Sirmione--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4&property_type_id%5B%5D=2",
     },
     {
-        "id":"d3","name":"קאזאלה דלי אוליבי – גבעות בארדולינו",
+        "id":"d3","is_entire":True,"name":"קאזאלה דלי אוליבי – גבעות בארדולינו",
         "area":"בארדולינו (חוף מזרחי)","address":"Via del Oliveto 12, Bardolino",
         "lat":45.5468,"lon":10.7225,
         "photo":"https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=700",
         "rating":4.3,"reviews":62,
         "eur_n":340,"eur_t":2040,
         "beds":5,"baths":3,"free_cancel":True,"is_deal":False,"deal_reason":"",
-        "tags":["🌿 אגריטוריזמו","✅ ביטול חינם","👶 ידידותי לילדים","🧹 נקי"],
+        "tags":["🌿 אגריטוריזמו","✅ ביטול חינם","👶 ידידותי לילדים","🐾 פינת חי","🧹 נקי"],
         "kids":["חצר גדולה","עגלת ילדים זמינה","שלב ונדנדה"],
         "clean":"8.5/10 – כפרי ומסורתי, נקי ומסודר",
         "exp":["כרמי יין בארדולינו","אופניים לאגם","פיקניק בזיתייה"],
@@ -237,7 +238,7 @@ DEMO = [
         "airbnb_url":"https://www.airbnb.com/s/Bardolino--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4&property_type_id%5B%5D=2",
     },
     {
-        "id":"d4","name":"טנוטה לה קוורצ'ה – מאלצ'זינה",
+        "id":"d4","is_entire":True,"name":"טנוטה לה קוורצ'ה – מאלצ'זינה",
         "area":"מאלצ'זינה (חוף מזרחי)","address":"Loc. Navene, Malcesine",
         "lat":45.7661,"lon":10.8059,
         "photo":"https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=700",
@@ -253,7 +254,7 @@ DEMO = [
         "airbnb_url":"https://www.airbnb.com/s/Malcesine--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4&property_type_id%5B%5D=2",
     },
     {
-        "id":"d5","name":"וילה לה ג'ויה – גארדה",
+        "id":"d5","is_entire":True,"name":"וילה לה ג'ויה – גארדה",
         "area":"גארדה (חוף מזרחי)","address":"Via Roma 14, Garda",
         "lat":45.5773,"lon":10.7097,
         "photo":"https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700",
@@ -268,7 +269,7 @@ DEMO = [
         "airbnb_url":"https://www.airbnb.com/s/Garda--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4",
     },
     {
-        "id":"d6","name":"וילה ספלנדידה – סאלו",
+        "id":"d6","is_entire":True,"name":"וילה ספלנדידה – סאלו",
         "area":"סאלו (חוף מערבי)","address":"Via Lungolago Zanardelli, Salò",
         "lat":45.6057,"lon":10.5193,
         "photo":"https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=700",
@@ -283,7 +284,7 @@ DEMO = [
         "airbnb_url":"https://www.airbnb.com/s/Salò--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4",
     },
     {
-        "id":"d7","name":"קאזה אגריקולה בנטי – קוסטרמאנו",
+        "id":"d7","is_entire":True,"name":"קאזה אגריקולה בנטי – קוסטרמאנו",
         "area":"קוסטרמאנו (חוף מזרחי)","address":"Via Brenzone 3, Costermano sul Garda",
         "lat":45.5757,"lon":10.7403,
         "photo":"https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=700",
@@ -291,7 +292,7 @@ DEMO = [
         "eur_n":298,"eur_t":1788,
         "beds":5,"baths":3,"free_cancel":True,"is_deal":True,
         "deal_reason":"5 חדרים + חצר 2,000מ\"ר לפעוטות – המחיר הנמוך ביותר לנכס גדול!",
-        "tags":["🌿 אגריטוריזמו","✅ ביטול חינם","👶 ידידותי לילדים","🧹 נקי"],
+        "tags":["🌿 אגריטוריזמו","✅ ביטול חינם","👶 ידידותי לילדים","🐾 פינת חי","🧹 נקי"],
         "kids":["חצר 2,000מ\"ר מגודרת","בעלי חיים בחווה","בריכה מתנפחת","טרקטורון ילדים"],
         "clean":"8.5/10 – כפרי ומסורתי, שמור ונקי",
         "exp":["טיול בכרמי יין","גבעות ירוקות עם נוף לאגם","שוק אורגני מקומי"],
@@ -299,7 +300,7 @@ DEMO = [
         "airbnb_url":"https://www.airbnb.com/s/Costermano-sul-Garda--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4",
     },
     {
-        "id":"d8","name":"וילה רוסה – לימונה סול גארדה",
+        "id":"d8","is_entire":True,"name":"וילה רוסה – לימונה סול גארדה",
         "area":"לימונה (חוף צפון-מערבי)","address":"Via IV Novembre 22, Limone sul Garda",
         "lat":45.8126,"lon":10.7897,
         "photo":"https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=700",
@@ -314,7 +315,7 @@ DEMO = [
         "airbnb_url":"https://www.airbnb.com/s/Limone-sul-Garda--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4",
     },
     {
-        "id":"d9","name":"פאלאצ'ו ורדה – פסקיירה דל גארדה",
+        "id":"d9","is_entire":True,"name":"פאלאצ'ו ורדה – פסקיירה דל גארדה",
         "area":"פסקיירה (חוף דרומי-מזרחי)","address":"Via Manzoni 5, Peschiera del Garda",
         "lat":45.4403,"lon":10.6866,
         "photo":"https://images.unsplash.com/photo-1601918774516-c58c6b5f8b9e?w=700",
@@ -329,14 +330,14 @@ DEMO = [
         "airbnb_url":"https://www.airbnb.com/s/Peschiera-del-Garda--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4",
     },
     {
-        "id":"d10","name":"אגריטוריזמו איל נוצ'ה – טורי דל בנאקו",
+        "id":"d10","is_entire":True,"name":"אגריטוריזמו איל נוצ'ה – טורי דל בנאקו",
         "area":"טורי דל בנאקו (חוף מזרחי)","address":"Via Gardesana 88, Torri del Benaco",
         "lat":45.6097,"lon":10.6877,
         "photo":"https://images.unsplash.com/photo-1464146072230-91cabc968266?w=700",
         "rating":4.6,"reviews":77,
         "eur_n":325,"eur_t":1950,
         "beds":5,"baths":3,"free_cancel":True,"is_deal":False,"deal_reason":"",
-        "tags":["🌿 אגריטוריזמו","🌊 נוף לאגם","✅ ביטול חינם","👶 ידידותי לילדים","🧹 נקי"],
+        "tags":["🌿 אגריטוריזמו","🌊 נוף לאגם","✅ ביטול חינם","👶 ידידותי לילדים","🐾 פינת חי","🧹 נקי"],
         "kids":["גינה מגודרת","מיטות תינוק","עגלות זמינות","שביל טיול בטוח"],
         "clean":"8.5/10 – כפרית ומטופחת, נוף אגם מהחלונות",
         "exp":["אגם מלכותי ושקט","מצודת Scaligero","טיולי אופניים לחוף"],
@@ -403,11 +404,14 @@ def fetch_booking_properties(api_key, arrival, departure):
             rm = re.search(r"(\d+\.?\d*)\s+\w+\s+([\d,]+)\s+reviews?", label)
             review_score = float(rm.group(1)) if rm else prop.get("reviewScore", 0)
             review_count = int(rm.group(2).replace(",", "")) if rm else prop.get("reviewCount", 0)
+            is_entire = "Entire" in label or "Whole" in label
+            if not is_entire:
+                continue
             bdr = re.search(r"(\d+)\s+bedroom", label)
             btr = re.search(r"(\d+)\s+bathroom", label)
             bedrooms = int(bdr.group(1)) if bdr else 4
             bathrooms = int(btr.group(1)) if btr else 2
-            if bedrooms < 3:
+            if bedrooms < 4:
                 continue
             total_usd = prop.get("priceBreakdown", {}).get("grossPrice", {}).get("value", 0)
             per_night = round(total_usd / 6) if total_usd else 0
@@ -440,6 +444,7 @@ def fetch_booking_properties(api_key, arrival, departure):
                 "beds": bedrooms, "baths": bathrooms,
                 "free_cancel": free_cancel,
                 "is_deal": is_deal, "deal_reason": deal_reason,
+                "is_entire": is_entire,
                 "tags": tags, "kids": [], "clean": clean_score, "exp": [],
                 "url": _booking_url(prop.get("name", ""), arrival, departure),
                 "airbnb_url": f"https://www.airbnb.com/s/Lake-Garda--Italy/homes?checkin={arrival}&checkout={departure}&adults=7&children=2&min_bedrooms=4",
@@ -481,23 +486,35 @@ def render_card(p, focus):
     cancel = '<div class="free-cancel">✅ ביטול חינם – החזר מלא עד 24 שעות לפני</div>' if p["free_cancel"] else ""
     usd_n  = eur_to_usd(p["eur_n"])
     usd_t  = eur_to_usd(p["eur_t"])
+    reviews_fmt = f"{p['reviews']:,}".replace(",", ",")
 
-    # Section extras
-    extra = ""
-
-    if focus == "distance":
-        rows = drive_distances_html(p["lat"], p["lon"])
-        exp  = " · ".join(p.get("exp", []))
-        maps_points = [f"{p['lat']},{p['lon']}"] + [f"{day['lat']},{day['lon']}" for day in ITINERARY]
-        maps_url = "https://www.google.com/maps/dir/" + "/".join(maps_points)
-        extra = f'<details class="drive-details"><summary>🚗 חישוב הנסיעות</summary><div class="drive-panel"><div class="sec-hdr" style="margin-top:0">🚗 מרחקי נסיעה יומיים</div><table class="drive-table"><thead><tr><th>תאריך</th><th>יעד</th><th>מרחק</th><th>זמן</th></tr></thead><tbody>{rows}</tbody></table><a class="maps-btn" href="{maps_url}" target="_blank">🗺️ פתח ב-Google Maps</a><p style="font-size:0.78rem;color:#6a8a6a;margin:8px 0 0">🎯 {exp}</p></div></details>'
-
-    elif focus == "kids":
-        items = "".join(f'<span class="badge bt">{f}</span>' for f in p.get("kids",[]))
-        extra = f'<div class="sec-hdr">👶 מה יש לילדים</div><div style="line-height:2.2">{items}</div>'
-
+    # Profile-specific section
+    profile_section = ""
+    if focus == "kids":
+        items = "".join(f'<span class="badge bt">{f}</span>' for f in p.get("kids", []))
+        if items:
+            profile_section = f'<div class="sec-hdr">👶 מה יש לילדים</div><div style="line-height:2.2">{items}</div>'
     elif focus == "beauty":
-        extra = f'<div class="sec-hdr">✨ נקיון ומראה</div><p style="font-size:0.88rem;color:#2a2a2a;margin:0">{p.get("clean","")}</p>'
+        profile_section = f'<div class="sec-hdr">✨ נקיון ומראה</div><p style="font-size:0.88rem;color:#2a2a2a;margin:0">{p.get("clean","")}</p>'
+
+    # Drive section – always shown; open by default for שמעון
+    rows = drive_distances_html(p["lat"], p["lon"])
+    exp  = " · ".join(p.get("exp", []))
+    maps_points = [f"{p['lat']},{p['lon']}"] + [f"{day['lat']},{day['lon']}" for day in ITINERARY]
+    maps_url = "https://www.google.com/maps/dir/" + "/".join(maps_points)
+    open_attr = " open" if focus == "distance" else ""
+    exp_row = f'<p style="font-size:0.78rem;color:#6a8a6a;margin:8px 0 0">🎯 {exp}</p>' if exp else ""
+    drive_section = (
+        f'<details class="drive-details"{open_attr}>'
+        f'<summary>🚗 חישוב הנסיעות</summary>'
+        f'<div class="drive-panel">'
+        f'<div class="sec-hdr" style="margin-top:0">🚗 מרחקי נסיעה יומיים</div>'
+        f'<table class="drive-table"><thead><tr><th>תאריך</th><th>יעד</th><th>מרחק</th><th>זמן</th></tr></thead><tbody>{rows}</tbody></table>'
+        f'<a class="maps-btn" href="{maps_url}" target="_blank">🗺️ פתח ב-Google Maps</a>'
+        f'{exp_row}</div></details>'
+    )
+
+    extra = (profile_section + drive_section).strip()
 
     st.markdown(f"""
     <div class="villa-card">
@@ -508,21 +525,21 @@ def render_card(p, focus):
         <div class="card-loc">📍 {p['area']} &nbsp;·&nbsp; {p['address']}</div>
         <div class="rating-row">
           <span class="stars">{stars_str(p['rating'])}</span>
-          <span class="rnum">{p['rating']}/5</span>
-          <span class="rcnt">({p['reviews']} ביקורות)</span>
+          <span class="rnum" style="font-size:1rem;font-weight:700">{p['rating']:.1f}/5</span>
+          <span class="rcnt">({reviews_fmt} ביקורות)</span>
           <span class="badge bb">{p['beds']} חד' שינה · {p['baths']} אמבטיות</span>
         </div>
         {badges}
-        {extra.strip()}
+        {extra}
         <div style="margin-top:14px">
           <div class="price-tag">${usd_n}<span style="font-size:1rem;font-weight:400">/לילה</span></div>
-          <div class="price-sub">סה"כ: ${usd_t} (6 לילות) · 7 מבוגרים + 2 פעוטות</div>
+          <div class="price-sub">סה&quot;כ: ${usd_t} (6 לילות) · 7 מבוגרים + 2 פעוטות</div>
           {cancel}
           <div class="book-row">
             <a class="btn-booking" href="{p['url']}" target="_blank">
               <span class="btn-icon">🏨</span> Booking.com
             </a>
-            <a class="btn-airbnb" href="{p.get('airbnb_url', 'https://www.airbnb.com/s/Lake-Garda--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4')}" target="_blank">
+            <a class="btn-airbnb" href="{p.get('airbnb_url', 'https://www.airbnb.com/s/Lake-Garda--Italy/homes?checkin=2026-05-18&checkout=2026-05-24&adults=7&children=2&min_bedrooms=4')}" target="_blank">
               <span class="btn-icon">🏠</span> Airbnb
             </a>
           </div>
@@ -554,11 +571,18 @@ def show_dashboard():
         min_r  = st.slider("דירוג מינימלי", 4.0, 5.0, 4.0, 0.1)
         max_p  = st.slider("מחיר מקסימלי ללילה ($)", 500, 1400, 1200, 50)
         st.markdown("### 🏷️ פילטרים")
-        req_pool = st.checkbox("🏊 בריכה")
-        req_agri = st.checkbox("🌿 אגריטוריזמו")
-        req_lake = st.checkbox("🌊 נוף לאגם")
-        req_kids = st.checkbox("👶 ידידותי לילדים", value=True) if profile == "shachar" else False
-        req_cln  = st.checkbox("🧹 נקי מאוד", value=True) if profile == "ima" else False
+        req_whole = st.checkbox("🏡 מבנה שלם בלבד", value=True, help="מסנן נכסים שכל הקבוצה ישנה ביחד")
+        req_pool  = st.checkbox("🏊 בריכה")
+        req_agri  = st.checkbox("🌿 אגריטוריזמו / חווה")
+        req_lake  = st.checkbox("🌊 נוף לאגם")
+        if profile == "shachar":
+            st.markdown("**🧒 לילדים:**")
+            req_kids = st.checkbox("👶 ידידותי לפעוטות")
+            req_farm = st.checkbox("🐾 פינת חי / בעלי חיים")
+        else:
+            req_kids = False
+            req_farm = False
+        req_cln = st.checkbox("🧹 נקי מאוד") if profile == "ima" else False
         st.markdown("---")
         st.markdown("### 👤 החלף פרופיל")
         for k, p in PROFILES.items():
@@ -645,14 +669,17 @@ def show_dashboard():
     filtered = []
     for p in all_p:
         usd_n = eur_to_usd(p["eur_n"])
-        if p["rating"] < min_r:                             continue
-        if usd_n > max_p:                                   continue
-        if not p["free_cancel"]:                            continue
-        if req_pool and "🏊 בריכה"          not in p["tags"]: continue
-        if req_agri and "🌿 אגריטוריזמו"    not in p["tags"]: continue
-        if req_lake and "🌊 נוף לאגם"       not in p["tags"]: continue
-        if req_kids and "👶 ידידותי לילדים" not in p["tags"]: continue
-        if req_cln  and "🧹 נקי מאוד"       not in p["tags"]: continue
+        if p["rating"] < min_r:                                          continue
+        if usd_n > max_p:                                                continue
+        if not p["free_cancel"]:                                         continue
+        if req_whole and not p.get("is_entire", True):                   continue
+        if p.get("beds", 4) < 4:                                         continue
+        if req_pool and "🏊 בריכה"            not in p["tags"]:          continue
+        if req_agri and "🌿 אגריטוריזמו"      not in p["tags"]:          continue
+        if req_lake and "🌊 נוף לאגם"         not in p["tags"]:          continue
+        if req_kids and "👶 ידידותי לילדים"   not in p["tags"]:          continue
+        if req_farm and "🐾 פינת חי"          not in p["tags"]:          continue
+        if req_cln  and "🧹 נקי מאוד"         not in p["tags"]:          continue
         filtered.append(p)
 
     # Stats
