@@ -252,6 +252,97 @@ DEMO = [
         "url":"https://www.booking.com/searchresults.en-gb.html?ss=Malcesine&checkin=2025-05-18&checkout=2025-05-24&group_adults=7&no_rooms=1&group_children=2",
         "airbnb_url":"https://www.airbnb.com/s/Malcesine--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4&property_type_id%5B%5D=2",
     },
+    {
+        "id":"d5","name":"וילה לה ג'ויה – גארדה",
+        "area":"גארדה (חוף מזרחי)","address":"Via Roma 14, Garda",
+        "lat":45.5773,"lon":10.7097,
+        "photo":"https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700",
+        "rating":4.6,"reviews":95,
+        "eur_n":445,"eur_t":2670,
+        "beds":4,"baths":3,"free_cancel":True,"is_deal":False,"deal_reason":"",
+        "tags":["🏊 בריכה","🌊 נוף לאגם","✅ ביטול חינם","⭐ יוקרתי","🧹 נקי מאוד"],
+        "kids":[],
+        "clean":"9.5/10 – יוקרתית, עיצוב מודרני ונקייה להפליא",
+        "exp":["סיור בכפר גארדה","שוק שבועי","שייט מקומי"],
+        "url":"https://www.booking.com/searchresults.en-gb.html?ss=Garda%2C+Lake+Garda&checkin=2025-05-18&checkout=2025-05-24&group_adults=7&no_rooms=1&group_children=2",
+        "airbnb_url":"https://www.airbnb.com/s/Garda--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4",
+    },
+    {
+        "id":"d6","name":"וילה ספלנדידה – סאלו",
+        "area":"סאלו (חוף מערבי)","address":"Via Lungolago Zanardelli, Salò",
+        "lat":45.6057,"lon":10.5193,
+        "photo":"https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=700",
+        "rating":4.9,"reviews":172,
+        "eur_n":535,"eur_t":3210,
+        "beds":5,"baths":4,"free_cancel":True,"is_deal":False,"deal_reason":"",
+        "tags":["🏊 בריכה","🌊 נוף לאגם","✅ ביטול חינם","⭐ יוקרתי","🧹 נקי מאוד"],
+        "kids":[],
+        "clean":"10/10 – מרהיבה, עיצוב איטלקי קלאסי, שוחזרה 2022",
+        "exp":["טיילת סאלו","חוף שקט ופחות תיירותי","מסעדות דגים מקומיות"],
+        "url":"https://www.booking.com/searchresults.en-gb.html?ss=Sal%C3%B2&checkin=2025-05-18&checkout=2025-05-24&group_adults=7&no_rooms=1&group_children=2",
+        "airbnb_url":"https://www.airbnb.com/s/Salò--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4",
+    },
+    {
+        "id":"d7","name":"קאזה אגריקולה בנטי – קוסטרמאנו",
+        "area":"קוסטרמאנו (חוף מזרחי)","address":"Via Brenzone 3, Costermano sul Garda",
+        "lat":45.5757,"lon":10.7403,
+        "photo":"https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=700",
+        "rating":4.4,"reviews":48,
+        "eur_n":298,"eur_t":1788,
+        "beds":5,"baths":3,"free_cancel":True,"is_deal":True,
+        "deal_reason":"5 חדרים + חצר 2,000מ\"ר לפעוטות – המחיר הנמוך ביותר לנכס גדול!",
+        "tags":["🌿 אגריטוריזמו","✅ ביטול חינם","👶 ידידותי לילדים","🧹 נקי"],
+        "kids":["חצר 2,000מ\"ר מגודרת","בעלי חיים בחווה","בריכה מתנפחת","טרקטורון ילדים"],
+        "clean":"8.5/10 – כפרי ומסורתי, שמור ונקי",
+        "exp":["טיול בכרמי יין","גבעות ירוקות עם נוף לאגם","שוק אורגני מקומי"],
+        "url":"https://www.booking.com/searchresults.en-gb.html?ss=Costermano+sul+Garda&checkin=2025-05-18&checkout=2025-05-24&group_adults=7&no_rooms=1&group_children=2",
+        "airbnb_url":"https://www.airbnb.com/s/Costermano-sul-Garda--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4",
+    },
+    {
+        "id":"d8","name":"וילה רוסה – לימונה סול גארדה",
+        "area":"לימונה (חוף צפון-מערבי)","address":"Via IV Novembre 22, Limone sul Garda",
+        "lat":45.8126,"lon":10.7897,
+        "photo":"https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=700",
+        "rating":4.7,"reviews":134,
+        "eur_n":468,"eur_t":2808,
+        "beds":4,"baths":3,"free_cancel":True,"is_deal":False,"deal_reason":"",
+        "tags":["🏊 בריכה","🌊 נוף לאגם","✅ ביטול חינם","⭐ חדש ומעוצב","🧹 נקי מאוד"],
+        "kids":[],
+        "clean":"9.5/10 – שוחזרה 2024, עיצוב מינימליסטי ומרהיב",
+        "exp":["כבל-רכבל מונטה באלדו 5 ד'","שחייה בצפון האגם","כפר לימונה הציורי"],
+        "url":"https://www.booking.com/searchresults.en-gb.html?ss=Limone+sul+Garda&checkin=2025-05-18&checkout=2025-05-24&group_adults=7&no_rooms=1&group_children=2",
+        "airbnb_url":"https://www.airbnb.com/s/Limone-sul-Garda--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4",
+    },
+    {
+        "id":"d9","name":"פאלאצ'ו ורדה – פסקיירה דל גארדה",
+        "area":"פסקיירה (חוף דרומי-מזרחי)","address":"Via Manzoni 5, Peschiera del Garda",
+        "lat":45.4403,"lon":10.6866,
+        "photo":"https://images.unsplash.com/photo-1601918774516-c58c6b5f8b9e?w=700",
+        "rating":4.5,"reviews":89,
+        "eur_n":352,"eur_t":2112,
+        "beds":5,"baths":3,"free_cancel":True,"is_deal":False,"deal_reason":"",
+        "tags":["🏊 בריכה","✅ ביטול חינם","👶 ידידותי לילדים","🧹 נקי מאוד"],
+        "kids":["בריכה עם אזור רדוד","גינה מוקפת גדר","מגלשת מים קטנה"],
+        "clean":"9/10 – מודרנית ונקייה, מתאים למשפחה גדולה",
+        "exp":["גארדלנד 10 דקות","פסקיירה העתיקה המוקפת חומות","Caneva Aquapark"],
+        "url":"https://www.booking.com/searchresults.en-gb.html?ss=Peschiera+del+Garda&checkin=2025-05-18&checkout=2025-05-24&group_adults=7&no_rooms=1&group_children=2",
+        "airbnb_url":"https://www.airbnb.com/s/Peschiera-del-Garda--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4",
+    },
+    {
+        "id":"d10","name":"אגריטוריזמו איל נוצ'ה – טורי דל בנאקו",
+        "area":"טורי דל בנאקו (חוף מזרחי)","address":"Via Gardesana 88, Torri del Benaco",
+        "lat":45.6097,"lon":10.6877,
+        "photo":"https://images.unsplash.com/photo-1464146072230-91cabc968266?w=700",
+        "rating":4.6,"reviews":77,
+        "eur_n":325,"eur_t":1950,
+        "beds":5,"baths":3,"free_cancel":True,"is_deal":False,"deal_reason":"",
+        "tags":["🌿 אגריטוריזמו","🌊 נוף לאגם","✅ ביטול חינם","👶 ידידותי לילדים","🧹 נקי"],
+        "kids":["גינה מגודרת","מיטות תינוק","עגלות זמינות","שביל טיול בטוח"],
+        "clean":"8.5/10 – כפרית ומטופחת, נוף אגם מהחלונות",
+        "exp":["אגם מלכותי ושקט","מצודת Scaligero","טיולי אופניים לחוף"],
+        "url":"https://www.booking.com/searchresults.en-gb.html?ss=Torri+del+Benaco&checkin=2025-05-18&checkout=2025-05-24&group_adults=7&no_rooms=1&group_children=2",
+        "airbnb_url":"https://www.airbnb.com/s/Torri-del-Benaco--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4",
+    },
 ]
 
 def haversine(lat1, lon1, lat2, lon2):
@@ -270,6 +361,92 @@ def stars_str(r):
 
 def eur_to_usd(e):
     return round(e * 1.08)
+
+# ─── Booking.com API fetch ────────────────────────────────────────────────────
+def _booking_slug(name):
+    import re, unicodedata
+    s = unicodedata.normalize("NFD", name.lower())
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    s = re.sub(r"[^a-z0-9\s'-]", "", s)
+    s = re.sub(r"[\s']+", "-", s.strip())
+    return s
+
+def _booking_url(name, arrival, departure):
+    slug = _booking_slug(name)
+    params = f"checkin={arrival}&checkout={departure}&group_adults=7&no_rooms=1&group_children=2&age=1&age=1"
+    return f"https://www.booking.com/hotel/it/{slug}.html?{params}"
+
+@st.cache_data(ttl=600)
+def fetch_booking_properties(api_key, arrival, departure):
+    import re
+    try:
+        r = requests.get(
+            "https://booking-com15.p.rapidapi.com/api/v1/hotels/searchHotels",
+            params={
+                "dest_id": "1428", "search_type": "region",
+                "arrival_date": arrival, "departure_date": departure,
+                "adults": "7", "children_age": "1,1", "room_qty": "1",
+                "page_number": "1", "currency_code": "USD",
+                "languagecode": "en-us", "units": "metric",
+            },
+            headers={"x-rapidapi-host": "booking-com15.p.rapidapi.com", "x-rapidapi-key": api_key},
+            timeout=12,
+        )
+        data = r.json()
+        if not data.get("status"):
+            return None
+        result = []
+        for h in data.get("data", {}).get("hotels", []):
+            prop = h.get("property", {})
+            label = h.get("accessibilityLabel", "")
+            free_cancel = "Free cancellation" in label
+            rm = re.search(r"(\d+\.?\d*)\s+\w+\s+([\d,]+)\s+reviews?", label)
+            review_score = float(rm.group(1)) if rm else prop.get("reviewScore", 0)
+            review_count = int(rm.group(2).replace(",", "")) if rm else prop.get("reviewCount", 0)
+            bdr = re.search(r"(\d+)\s+bedroom", label)
+            btr = re.search(r"(\d+)\s+bathroom", label)
+            bedrooms = int(bdr.group(1)) if bdr else 4
+            bathrooms = int(btr.group(1)) if btr else 2
+            if bedrooms < 3:
+                continue
+            total_usd = prop.get("priceBreakdown", {}).get("grossPrice", {}).get("value", 0)
+            per_night = round(total_usd / 6) if total_usd else 0
+            photos = prop.get("photoUrls", [])
+            photo = photos[0].replace("square500", "square1024") if photos else ""
+            badges = prop.get("priceBreakdown", {}).get("benefitBadges", [])
+            is_deal = bool(badges)
+            deal_reason = badges[0].get("explanation", "") if badges else ""
+            tags = []
+            if free_cancel:
+                tags.append("✅ ביטול חינם")
+            if review_score >= 9.0:
+                tags.append("🧹 נקי מאוד")
+            if prop.get("qualityClass", 0) >= 4 or prop.get("accuratePropertyClass", 0) >= 4:
+                tags.append("⭐ יוקרתי")
+            hotel_id = prop.get("id", "")
+            area = prop.get("wishlistName", "Lake Garda")
+            clean_score = f"{review_score}/10 – {'מדהים' if review_score >= 9 else 'טוב מאוד'}"
+            result.append({
+                "id": f"bk_{hotel_id}",
+                "name": prop.get("name", ""),
+                "area": area, "address": area,
+                "lat": prop.get("latitude", 45.5),
+                "lon": prop.get("longitude", 10.7),
+                "photo": photo,
+                "rating": round(review_score / 2, 1),
+                "reviews": review_count,
+                "eur_n": round(per_night / 1.08),
+                "eur_t": round(total_usd / 1.08),
+                "beds": bedrooms, "baths": bathrooms,
+                "free_cancel": free_cancel,
+                "is_deal": is_deal, "deal_reason": deal_reason,
+                "tags": tags, "kids": [], "clean": clean_score, "exp": [],
+                "url": _booking_url(prop.get("name", ""), arrival, departure),
+                "airbnb_url": f"https://www.airbnb.com/s/Lake-Garda--Italy/homes?checkin={arrival}&checkout={departure}&adults=7&children=2&min_bedrooms=4",
+            })
+        return result or None
+    except Exception:
+        return None
 
 # ─── Login ────────────────────────────────────────────────────────────────────
 def show_login():
@@ -380,8 +557,8 @@ def show_dashboard():
         req_pool = st.checkbox("🏊 בריכה")
         req_agri = st.checkbox("🌿 אגריטוריזמו")
         req_lake = st.checkbox("🌊 נוף לאגם")
-        req_kids = st.checkbox("👶 ידידותי לילדים") if profile == "shachar" else False
-        req_cln  = st.checkbox("🧹 נקי מאוד") if profile == "ima" else False
+        req_kids = st.checkbox("👶 ידידותי לילדים", value=True) if profile == "shachar" else False
+        req_cln  = st.checkbox("🧹 נקי מאוד", value=True) if profile == "ima" else False
         st.markdown("---")
         st.markdown("### 👤 החלף פרופיל")
         for k, p in PROFILES.items():
@@ -390,15 +567,38 @@ def show_dashboard():
                     st.session_state["profile"] = k
                     st.rerun()
         st.markdown("---")
+        st.markdown("### 📅 תאריכי חיפוש")
+        from datetime import date
+        arr = st.date_input("הגעה", value=date(2026, 5, 18))
+        dep = st.date_input("עזיבה", value=date(2026, 5, 24))
+        arrival_str   = arr.strftime("%Y-%m-%d")
+        departure_str = dep.strftime("%Y-%m-%d")
+        st.markdown("---")
         auto_ref = st.checkbox("⏱️ רענון כל 5 דקות")
         if st.button("🔄 רענן עכשיו", use_container_width=True):
-            st.session_state["props"] = DEMO
+            fetch_booking_properties.clear()
+            st.session_state.pop("props", None)
+            st.session_state.pop("api_fetched", None)
             st.session_state["ts"] = datetime.now().strftime("%H:%M:%S")
             st.rerun()
         if RAPIDAPI_KEY:
-            st.success("✅ API מחובר")
+            st.success("✅ Booking.com API מחובר")
         else:
-            st.warning("⚠️ מצב דמו")
+            st.warning("⚠️ מצב דמו – הוסף RAPIDAPI_KEY")
+
+    # ── Fetch from API (once per session / date change) ──────────────────────
+    cache_key = f"{arrival_str}_{departure_str}"
+    if RAPIDAPI_KEY and st.session_state.get("api_cache_key") != cache_key:
+        with st.spinner("⏳ טוען נכסים מ-Booking.com..."):
+            props = fetch_booking_properties(RAPIDAPI_KEY, arrival_str, departure_str)
+        if props:
+            st.session_state["props"] = props
+            st.session_state["api_cache_key"] = cache_key
+            st.session_state["ts"] = datetime.now().strftime("%H:%M:%S")
+        else:
+            st.session_state.setdefault("props", DEMO)
+    elif "props" not in st.session_state:
+        st.session_state["props"] = DEMO
 
     # Deal banner – show on entry
     all_p = st.session_state.get("props", DEMO)
@@ -520,8 +720,7 @@ def main():
     if "profile" not in st.session_state:
         show_login()
     else:
-        if "props" not in st.session_state:
-            st.session_state["props"] = DEMO
+        if "ts" not in st.session_state:
             st.session_state["ts"] = datetime.now().strftime("%H:%M:%S")
         show_dashboard()
 
