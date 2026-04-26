@@ -97,25 +97,11 @@ h1,h2,h3 { font-family: 'Frank Ruhl Libre', serif; }
 }
 .book-btn:hover { background: #1e3d2a; }
 
-.drive-btn-wrap { position: relative; display: inline-block; margin: 12px 0 4px; }
-.drive-btn {
-  display: inline-flex; align-items: center; gap: 6px;
-  background: #2d5a3d; color: white !important;
-  padding: 9px 18px; border-radius: 10px; text-decoration: none !important;
-  font-weight: 600; font-size: 0.85rem; white-space: nowrap;
-}
-.drive-btn:hover { background: #1e3d2a; }
-.drive-tooltip {
-  visibility: hidden; opacity: 0;
-  position: absolute; bottom: calc(100% + 10px); left: 0;
-  background: white; border: 1.5px solid #e8e0d0;
-  border-radius: 12px; padding: 14px 16px;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
-  min-width: 340px; z-index: 9999;
-  transition: opacity 0.2s, visibility 0.2s;
-  pointer-events: none;
-}
-.drive-btn-wrap:hover .drive-tooltip { visibility: visible; opacity: 1; pointer-events: auto; }
+details.drive-details summary::-webkit-details-marker { display:none; }
+details.drive-details summary { list-style:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px; background:#2d5a3d; color:white; padding:9px 18px; border-radius:10px; font-weight:600; font-size:0.85rem; user-select:none; margin:10px 0 0; }
+details.drive-details summary:hover { background:#1e3d2a; }
+details.drive-details .drive-panel { background:white; border:1.5px solid #e8e0d0; border-radius:12px; padding:14px 16px; margin-top:8px; }
+.maps-btn { display:inline-block; background:#4285f4; color:white !important; padding:7px 14px; border-radius:8px; text-decoration:none !important; font-weight:600; font-size:0.82rem; margin-top:10px; }
 
 .rating-row { display: flex; align-items: center; gap: 6px; margin: 8px 0; }
 .stars { color: #f4a700; }
@@ -327,19 +313,7 @@ def render_card(p, focus):
         exp  = " · ".join(p.get("exp", []))
         maps_points = [f"{p['lat']},{p['lon']}"] + [f"{day['lat']},{day['lon']}" for day in ITINERARY]
         maps_url = "https://www.google.com/maps/dir/" + "/".join(maps_points)
-        extra = f"""
-        <div class="drive-btn-wrap">
-          <a class="drive-btn" href="{maps_url}" target="_blank">🚗 חישוב הנסיעות</a>
-          <div class="drive-tooltip">
-            <div class="sec-hdr" style="margin-top:0">🚗 מרחקי נסיעה יומיים</div>
-            <table class="drive-table">
-              <thead><tr><th>תאריך</th><th>יעד</th><th>מרחק</th><th>זמן נסיעה</th></tr></thead>
-              <tbody>{rows}</tbody>
-            </table>
-            <p style="font-size:0.78rem;color:#6a8a6a;margin:6px 0 0">🎯 {exp}</p>
-          </div>
-        </div>
-        """
+        extra = f'<details class="drive-details"><summary>🚗 חישוב הנסיעות</summary><div class="drive-panel"><div class="sec-hdr" style="margin-top:0">🚗 מרחקי נסיעה יומיים</div><table class="drive-table"><thead><tr><th>תאריך</th><th>יעד</th><th>מרחק</th><th>זמן</th></tr></thead><tbody>{rows}</tbody></table><a class="maps-btn" href="{maps_url}" target="_blank">🗺️ פתח ב-Google Maps</a><p style="font-size:0.78rem;color:#6a8a6a;margin:8px 0 0">🎯 {exp}</p></div></details>'
 
     elif focus == "kids":
         items = "".join(f'<span class="badge bt">{f}</span>' for f in p.get("kids",[]))
@@ -362,7 +336,7 @@ def render_card(p, focus):
           <span class="badge bb">{p['beds']} חד' שינה · {p['baths']} אמבטיות</span>
         </div>
         {badges}
-        {extra}
+        {extra.strip()}
         <div style="margin-top:14px">
           <div class="price-tag">${usd_n}<span style="font-size:1rem;font-weight:400">/לילה</span></div>
           <div class="price-sub">סה"כ: ${usd_t} (6 לילות) · 7 מבוגרים + 2 פעוטות</div>
@@ -386,7 +360,7 @@ def drive_distances_html(vlat, vlon):
     for day in ITINERARY:
         km = haversine(vlat, vlon, day["lat"], day["lon"])
         t  = drive_time(km)
-        trs += f"<tr><td>{day['date']}</td><td>{day['desc']}</td><td class='dkm'>{km} ק\"מ</td><td class='dtm'>{t}</td></tr>"
+        trs += f'<tr><td>{day["date"]}</td><td>{day["desc"]}</td><td class="dkm">{km} ק&quot;מ</td><td class="dtm">{t}</td></tr>'
     return trs
 
 # ─── Dashboard ────────────────────────────────────────────────────────────────
