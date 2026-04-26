@@ -61,12 +61,12 @@ h1,h2,h3 { font-family: 'Frank Ruhl Libre', serif; }
 
 .villa-card {
   background: white; border-radius: 18px; margin-bottom: 24px;
-  overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  overflow: visible; box-shadow: 0 4px 20px rgba(0,0,0,0.07);
   border: 1.5px solid #e8e0d0;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .villa-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,0,0,0.13); }
-.card-img { width: 100%; height: 210px; object-fit: cover; }
+.card-img { width: 100%; height: 210px; object-fit: cover; border-radius: 17px 17px 0 0; }
 .card-body { padding: 18px 20px 20px; }
 .card-title { font-family: 'Frank Ruhl Libre', serif; font-size: 1.15rem; font-weight: 700; color: #1a1a1a; margin-bottom: 4px; }
 .card-loc { color: #8a7a6a; font-size: 0.82rem; margin-bottom: 10px; }
@@ -97,6 +97,26 @@ h1,h2,h3 { font-family: 'Frank Ruhl Libre', serif; }
 }
 .book-btn:hover { background: #1e3d2a; }
 
+.drive-btn-wrap { position: relative; display: inline-block; margin: 12px 0 4px; }
+.drive-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #2d5a3d; color: white !important;
+  padding: 9px 18px; border-radius: 10px; text-decoration: none !important;
+  font-weight: 600; font-size: 0.85rem; white-space: nowrap;
+}
+.drive-btn:hover { background: #1e3d2a; }
+.drive-tooltip {
+  visibility: hidden; opacity: 0;
+  position: absolute; bottom: calc(100% + 10px); left: 0;
+  background: white; border: 1.5px solid #e8e0d0;
+  border-radius: 12px; padding: 14px 16px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
+  min-width: 340px; z-index: 9999;
+  transition: opacity 0.2s, visibility 0.2s;
+  pointer-events: none;
+}
+.drive-btn-wrap:hover .drive-tooltip { visibility: visible; opacity: 1; pointer-events: auto; }
+
 .rating-row { display: flex; align-items: center; gap: 6px; margin: 8px 0; }
 .stars { color: #f4a700; }
 .rnum { font-weight: 600; font-size: 0.9rem; }
@@ -110,6 +130,23 @@ h1,h2,h3 { font-family: 'Frank Ruhl Libre', serif; }
 }
 .deal-star { color: #e85d20; font-size: 0.85rem; font-weight: 700; }
 .no-res { text-align:center; padding:60px 20px; color:#8a7a6a; font-size:1.1rem; }
+
+.book-row { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+.btn-booking {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: #003580; color: white !important;
+  padding: 10px 18px; border-radius: 10px; text-decoration: none !important;
+  font-weight: 600; font-size: 0.85rem; transition: background 0.2s; white-space: nowrap;
+}
+.btn-booking:hover { background: #00255a; }
+.btn-airbnb {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: #FF385C; color: white !important;
+  padding: 10px 18px; border-radius: 10px; text-decoration: none !important;
+  font-weight: 600; font-size: 0.85rem; transition: background 0.2s; white-space: nowrap;
+}
+.btn-airbnb:hover { background: #d4153a; }
+.btn-icon { font-size: 1rem; }
 
 div[data-testid="stSidebar"] { background: #1a3d2a !important; }
 div[data-testid="stSidebar"] label,
@@ -181,6 +218,7 @@ DEMO = [
         "clean":"10/10 – אורחים כותבים 'נקי להפליא', שופץ 2023",
         "exp":["טעימות יין בכרמים","טיולי אופניים לאגם","שוק שבועי בלאציזה"],
         "url":"https://www.booking.com/searchresults.en-gb.html?ss=Lazise&checkin=2025-05-18&checkout=2025-05-24&group_adults=7&no_rooms=1&group_children=2",
+        "airbnb_url":"https://www.airbnb.com/s/Lazise--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4&amenities%5B%5D=7&property_type_id%5B%5D=2",
     },
     {
         "id":"d2","name":"וילה רוסטיקה סירמיונה – חצי האי",
@@ -195,6 +233,7 @@ DEMO = [
         "clean":"9.5/10 – עיצוב מודרני ושמור היטב",
         "exp":["גלישת מים באגם","סיור ב-Castello Scaligero","ספא מקומי"],
         "url":"https://www.booking.com/searchresults.en-gb.html?ss=Sirmione&checkin=2025-05-18&checkout=2025-05-24&group_adults=7&no_rooms=1&group_children=2",
+        "airbnb_url":"https://www.airbnb.com/s/Sirmione--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4&property_type_id%5B%5D=2",
     },
     {
         "id":"d3","name":"קאזאלה דלי אוליבי – גבעות בארדולינו",
@@ -209,6 +248,7 @@ DEMO = [
         "clean":"8.5/10 – כפרי ומסורתי, נקי ומסודר",
         "exp":["כרמי יין בארדולינו","אופניים לאגם","פיקניק בזיתייה"],
         "url":"https://www.booking.com/searchresults.en-gb.html?ss=Bardolino&checkin=2025-05-18&checkout=2025-05-24&group_adults=7&no_rooms=1&group_children=2",
+        "airbnb_url":"https://www.airbnb.com/s/Bardolino--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4&property_type_id%5B%5D=2",
     },
     {
         "id":"d4","name":"טנוטה לה קוורצ'ה – מאלצ'זינה",
@@ -224,6 +264,7 @@ DEMO = [
         "clean":"10/10 – שופצה 2023 מהיסוד, עיצוב חדש לחלוטין",
         "exp":["כבל-רכבל מונטה באלדו","שייט בקיאק","כפר מאלצ'זינה ההיסטורי"],
         "url":"https://www.booking.com/searchresults.en-gb.html?ss=Malcesine&checkin=2025-05-18&checkout=2025-05-24&group_adults=7&no_rooms=1&group_children=2",
+        "airbnb_url":"https://www.airbnb.com/s/Malcesine--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4&property_type_id%5B%5D=2",
     },
 ]
 
@@ -284,13 +325,20 @@ def render_card(p, focus):
     if focus == "distance":
         rows = drive_distances_html(p["lat"], p["lon"])
         exp  = " · ".join(p.get("exp", []))
+        maps_points = [f"{p['lat']},{p['lon']}"] + [f"{day['lat']},{day['lon']}" for day in ITINERARY]
+        maps_url = "https://www.google.com/maps/dir/" + "/".join(maps_points)
         extra = f"""
-        <div class="sec-hdr">🚗 מרחקי נסיעה יומיים</div>
-        <table class="drive-table">
-          <thead><tr><th>תאריך</th><th>יעד</th><th>מרחק</th><th>זמן נסיעה</th></tr></thead>
-          <tbody>{rows}</tbody>
-        </table>
-        <p style="font-size:0.78rem;color:#6a8a6a;margin:6px 0 0">🎯 {exp}</p>
+        <div class="drive-btn-wrap">
+          <a class="drive-btn" href="{maps_url}" target="_blank">🚗 חישוב הנסיעות</a>
+          <div class="drive-tooltip">
+            <div class="sec-hdr" style="margin-top:0">🚗 מרחקי נסיעה יומיים</div>
+            <table class="drive-table">
+              <thead><tr><th>תאריך</th><th>יעד</th><th>מרחק</th><th>זמן נסיעה</th></tr></thead>
+              <tbody>{rows}</tbody>
+            </table>
+            <p style="font-size:0.78rem;color:#6a8a6a;margin:6px 0 0">🎯 {exp}</p>
+          </div>
+        </div>
         """
 
     elif focus == "kids":
@@ -315,13 +363,18 @@ def render_card(p, focus):
         </div>
         {badges}
         {extra}
-        <div class="price-row">
-          <div>
-            <div class="price-tag">${usd_n}<span style="font-size:1rem;font-weight:400">/לילה</span></div>
-            <div class="price-sub">סה"כ: ${usd_t} (6 לילות) · 7 מבוגרים + 2 פעוטות</div>
-            {cancel}
+        <div style="margin-top:14px">
+          <div class="price-tag">${usd_n}<span style="font-size:1rem;font-weight:400">/לילה</span></div>
+          <div class="price-sub">סה"כ: ${usd_t} (6 לילות) · 7 מבוגרים + 2 פעוטות</div>
+          {cancel}
+          <div class="book-row">
+            <a class="btn-booking" href="{p['url']}" target="_blank">
+              <span class="btn-icon">🏨</span> Booking.com
+            </a>
+            <a class="btn-airbnb" href="{p.get('airbnb_url', 'https://www.airbnb.com/s/Lake-Garda--Italy/homes?checkin=2025-05-18&checkout=2025-05-24&adults=7&children=2&min_bedrooms=4')}" target="_blank">
+              <span class="btn-icon">🏠</span> Airbnb
+            </a>
           </div>
-          <a class="book-btn" href="{p['url']}" target="_blank">הזמן עכשיו ←</a>
         </div>
       </div>
     </div>
